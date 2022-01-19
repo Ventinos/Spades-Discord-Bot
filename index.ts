@@ -11,7 +11,7 @@ const client =  new DiscordJS.Client({
 })
 
 client.on('ready', () => {
-    console.log('ELE ESTÁ VIVO!');
+    console.log('It´s alive mwahahaha!');
 })
 
 ///FUNÇÃO
@@ -37,7 +37,7 @@ const bot = () => {
 
 
 client.on('messageCreate', (message) => {
-    if (message.content === '!botmerda') {
+    if (message.content === '!command') {
         bot();
         message.reply(`${resposta}`);
         resposta.splice(0, resposta.length);
